@@ -6,33 +6,35 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background: radial-gradient(circle at top, #0b2b4a, #000);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     color: #fff;
 }
 
 .card {
     background: rgba(10, 20, 40, 0.92);
     border-radius: 20px;
-    padding: 42px;
-    width: 380px;
+    padding: 40px;
+    width: 100%;
+    max-width: 380px;
     text-align: center;
     box-shadow: 0 0 50px rgba(0, 140, 255, 0.35);
 }
 
 .avatar {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     border: 3px solid #1e90ff;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 800;
 }
 
@@ -40,13 +42,13 @@ h2 {
     font-size: 14px;
     letter-spacing: 1px;
     color: #7fbfff;
-    margin: 10px 0 22px;
+    margin: 10px 0 20px;
 }
 
 p {
     font-size: 14px;
     color: #d0d0d0;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
     line-height: 1.6;
 }
 
@@ -55,7 +57,7 @@ p {
     text-decoration: none;
     color: #fff;
     background: linear-gradient(135deg, #007bff, #00c6ff);
-    padding: 13px;
+    padding: 14px;
     margin: 12px 0;
     border-radius: 12px;
     font-weight: 600;
@@ -63,13 +65,33 @@ p {
 }
 
 .links a:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 0 0 18px rgba(0, 198, 255, 0.8);
 }
 
 footer {
-    position: absolute;
-    bottom: 18px;
+    margin-top: 20px;
     font-size: 12px;
     color: #888;
+    text-align: center;
+}
+
+/* 📱 Mobile optimization */
+@media (max-width: 480px) {
+    .card {
+        padding: 30px 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .links a {
+        padding: 13px;
+        font-size: 14px;
+    }
 }
