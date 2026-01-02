@@ -15,33 +15,80 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mahdiasgary.github.io">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<div class="all">
 
-    <div class="card">
-        <img src="profile.jpg" alt="Mahdi Asgary" class="avatar">
+<body>
+<div class="min-h-[100dvh] w-full text-white bg-[radial-gradient(circle_at_top,_#0b2b4a,_#000)]">
+  <div class="flex flex-col min-h-[100dvh] w-full justify-between items-center lg:p-5 p-16">
     
-        <h1>Mahdi Asgary</h1>
-        <h2>Security Researcher & Bug Bounty Hunter</h2>
-    
-        <p>
-            Web Security enthusiast focused on OWASP Top 10, real-world vulnerability research,
-            and responsible disclosure.
-        </p>
-    
-        <div class="links">
-            <a href="https://github.com/mahdiasgary" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/mahdi-asgary" target="_blank">LinkedIn</a>
-            <a href="https://linktr.ee/mahdiasgary" target="_blank">Linktree</a>
-        </div>
+    <!-- Card -->
+    <div class="bg-[rgba(10,20,40,0.92)]  rounded-[20px] shadow-[0_0_50px_rgba(0,140,255,0.35)]
+                w-full lg:max-w-[380px] flex flex-col justify-between gap-10 p-16 lg:p-5 flex-grow lg:mb-0 mb-16">
+      
+      <div>
+        <img src="profile.jpg"
+             alt="Mahdi Asgary"
+             class="lg:w-[120px] lg:h-[120px] w-[300px] sm:h-[300px] mx-auto mb-6 rounded-full
+                    border-[3px] border-[#1e90ff]" />
+
+        <h1 class="text-[48px] lg:text-[28px] font-extrabold text-center">
+            Mahdi Asgary
+        </h1>
+
+        <h2 class="text-[30px] lg:text-[14px] tracking-widest text-[#7fbfff] mt-2 mb-5 text-center">
+            Security Researcher & Bug Bounty Hunter
+        </h2>
+
+<p class="text-[33px] lg:text-[16px] text-[#d0d0d0] leading-relaxed mb-7 text-center">
+    Web Security enthusiast & Front-End Developer, focused on OWASP Top 10,
+    real-world vulnerability research,
+    and responsible disclosure.
+</p>
+
+      </div>
+
+      <!-- Links -->
+      <div class="lg:space-y-3 space-y-6 text-[36px] lg:text-base">
+        <a href="https://github.com/mahdiasgary" target="_blank"
+           class="block py-12 lg:py-4 rounded-xl font-semibold
+                  bg-gradient-to-br from-[#007bff] to-[#00c6ff]
+                  transition duration-200
+                  hover:-translate-y-1
+                  hover:shadow-[0_0_18px_rgba(0,198,255,0.8)] text-center">
+            GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/mahdi-asgary" target="_blank"
+           class="block py-12 lg:py-4 rounded-xl font-semibold
+                  bg-gradient-to-br from-[#007bff] to-[#00c6ff]
+                  transition duration-200
+                  hover:-translate-y-1
+                  hover:shadow-[0_0_18px_rgba(0,198,255,0.8)] text-center">
+            LinkedIn
+        </a>
+
+        <a href="https://linktr.ee/mahdiasgary" target="_blank"
+           class="block py-12 lg:py-4 rounded-xl font-semibold
+                  bg-gradient-to-br from-[#007bff] to-[#00c6ff]
+                  transition duration-200
+                  hover:-translate-y-1
+                  hover:shadow-[0_0_18px_rgba(0,198,255,0.8)] text-center">
+            Linktree
+        </a>
+      </div> 
     </div>
     
-    <footer>
+    <!-- Footer -->
+    <div class="text-[20px] lg:text-base text-[#888] text-center mt-6">
         © 2026 Mahdi Asgary
-    </footer>
+    </div>
+  </div>
 </div>
 
+
 </body>
+
+
 </html>
